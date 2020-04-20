@@ -50,7 +50,7 @@ export default {
     axios
       .get("https://api.kawalcorona.com/indonesia/provinsi/") /* Data global */
       .then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         for (let i = 0; i < response.data.length; i++) {
           this.desserts.push(response.data[i].attributes);
         }
