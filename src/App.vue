@@ -1,9 +1,11 @@
 <template>
   <v-app>
     <v-card color="grey lighten-4" flat height="auto">
-      <v-toolbar color="elevation-0">
+      <v-toolbar>
         <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
-        <v-toolbar-title>DPkM</v-toolbar-title>
+        <!-- <v-img :src="require('@/assets/logo_dpkm.png')"></v-img> -->
+        <img :src="require('@/assets/logo_dpkm.png')" height="40" />
+        <v-toolbar-title></v-toolbar-title>
       </v-toolbar>
     </v-card>
     <v-container class="grey lighten-5">
@@ -21,6 +23,10 @@
         </v-card-title>
         <v-data-table :headers="headers" :items="desserts" :search="search"></v-data-table>
       </v-card>
+      <p class="float-left mt-5">
+        *Data diperoleh dari
+        <a href="https://kawalcorona.com/">kawalcorona.com</a>
+      </p>
     </v-container>
   </v-app>
 </template>
